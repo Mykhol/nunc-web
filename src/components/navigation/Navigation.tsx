@@ -1,26 +1,27 @@
 import {FC} from "react";
 import Image from "next/image";
-import nuncLogo from "../images/nunc_logo_white.png"
+import nuncLogo from "../../images/nunc_logo_white.png"
 import styled from "styled-components";
 import Link from "next/link";
 
-
+// DIV that wraps the entire Navigation container
 const NavigationContainer = styled.div`
 
   // Space & Position
-  width: 100% - (2 * ${props => props.theme.page.paddingHorizontal});
+  width: 100% - (2 * ${props => props.theme.padding.page.horizontal});
   height: 6rem;
 
-  padding: 0 ${props => props.theme.page.paddingHorizontal};
+  padding: 0 ${props => props.theme.padding.page.horizontal};
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  
   // Features
 
 
   // Colour
-  background-color: black;
+  background-color: ${props => props.theme.colours.main.dark};
 
   // Children
   #logo-container {

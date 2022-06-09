@@ -5,6 +5,10 @@ import normalize from "styled-normalize";
 const GlobalStyle = createGlobalStyle`
 
   ${normalize};
+  
+  * {
+    font-family: 'Lexend Deca', sans-serif;
+  }
 
 `
 
